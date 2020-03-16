@@ -15,6 +15,7 @@ operate = (operator,a,b) => {
 let screenValue = "";
 let Abuttons = document.querySelectorAll(".buttonA");
 let Bbuttons = document.querySelectorAll(".buttonB");
+let allButtons = document.querySelectorAll(".press");
 let operator = "";
 let firstNumber = "";
 let secondNumber = "";
@@ -22,7 +23,7 @@ let results = [];
 let times = 0;
 
 //script for numbers
-for (let i=0; i<Abuttons.length; i++) {
+for (let i=0; i<Abuttons.length; i++){
     sum = () => {
         screenValue += Abuttons[i].textContent; 
         document.getElementById("screen2").innerHTML = screenValue;
@@ -84,3 +85,13 @@ del = () => {
     }
 }
 document.getElementById("DEL").addEventListener("click", del);
+
+//script for pressing keys
+press = (e) => {
+    for (let i=0; i<allButtons.length; i++){
+        if(e.key == allButtons[i].innerHTML) document.getElementById(e.key).click();
+    }
+    console.log(e.key)
+    if (e.key == "Enter") document.getElementById("equals").click();
+}
+window.addEventListener("keydown", press)
