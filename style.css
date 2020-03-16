@@ -1,0 +1,85 @@
+#container {
+    margin-left: 50%;
+    transform: translate(-50%);
+    background-color: burlywood;
+    width: 300px;
+    padding: 10px;
+    border: black 2px solid;
+    border-radius: 3%;
+}
+
+#calculator {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    height: 450px;
+    width: 300px;
+}
+
+.buttonA {
+    border-style: groove;
+    height: 60px;
+    width: 60px;
+    background-color: grey;
+    color: blanchedalmond;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: lighter;
+}
+
+.buttonB {
+    border-style: groove;
+    height: 60px;
+    width: 60px;
+    background-color: grey;
+    color: blanchedalmond;
+    font-size: 2em;
+    text-align: center;
+    font-weight: lighter;
+}
+
+#screen {
+    grid-column: 1/5;
+    text-align: end;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 2px;
+    font-size: 1.2em;
+    border-style: groove;
+    height: 50px;
+    display: grid;
+    grid-template-rows: 1fr;
+    background-color: white;
+}
+
+#equals {
+    border-style: groove;
+    height: 60px;
+    grid-column: 3/5;
+    width: 135px;
+    background-color: grey;
+    color: blanchedalmond;
+}
+
+#AC {
+    border-style: groove;
+    height: 60px;
+    width: 60px;
+    background-color: grey;
+    color: blanchedalmond;
+}
+
+#DEL {
+    border-style: groove;
+    height: 60px;
+    width: 60px;
+    background-color: grey;
+    color: blanchedalmond;
+}
+
+#C {
+    border-style: groove;
+    height: 60px;
+    width: 60px;
+    background-color: grey;
+    color: blanchedalmond;
+}
